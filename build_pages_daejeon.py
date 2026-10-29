@@ -81,9 +81,9 @@ def render_cards_html(area_label, dong_name=""):
       <a class="card-media" href="tel:{s['phone']}" aria-label="{display_name} 전화 문의">
         <span class="media-fallback">{s['category']}</span>
         <picture class="card-picture">
-          <source media="(max-width: 680px)" srcset="/assets/cards/therapist-card-01-240.webp">
-          <img class="card-photo" src="/assets/banner.jpg" alt="{display_name} 대표 이미지" width="512" height="320" loading="lazy">
-        </picture>
+  <source media="(max-width: 680px)" srcset="/assets/cards/therapist-card-01-240.webp">
+  <img class="card-photo" src="/assets/cards/therapist-card-01-512.webp" alt="{display_name} 대표 이미지" width="512" height="320" loading="lazy">
+</picture>
       </a>
       <div class="card-body">
         <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-bottom: 6px;">
