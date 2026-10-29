@@ -82,7 +82,7 @@ def render_cards_html(area_label, dong_name=""):
         <span class="media-fallback">{s['category']}</span>
         <picture class="card-picture">
           <source media="(max-width: 680px)" srcset="/assets/cards/therapist-card-01-240.webp">
-          <img class="card-photo" src="/assets/cards/therapist-card-01-512.webp" alt="{display_name} 대표 이미지" width="512" height="320" loading="lazy">
+          <img class="card-photo" src="/assets/banner.jpg" alt="{display_name} 대표 이미지" width="512" height="320" loading="lazy">
         </picture>
       </a>
       <div class="card-body">
@@ -126,7 +126,7 @@ def generate_page(title_area, page_path, breadcrumbs, related_links, current_cit
         "url": full_url,
         "telephone": DEFAULT_PHONE,
         "priceRange": "50,000원 ~ 150,000원",
-        "image": f"{SITE_ORIGIN}/assets/cards/therapist-card-01-512.webp",
+        "image": f"{SITE_ORIGIN}/assets/banner.jpg",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": current_district or title_area,
@@ -184,7 +184,8 @@ def generate_page(title_area, page_path, breadcrumbs, related_links, current_cit
   <meta property="og:url" content="{full_url}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{SITE_NAME}">
-
+  <meta property="og:image" content="{SITE_ORIGIN}/assets/banner.jpg">
+  <meta name="twitter:image" content="{SITE_ORIGIN}/assets/banner.jpg">
   <!-- 네이버 별점 및 구조화 데이터 -->
   <script type="application/ld+json">
 {json_ld_string}
